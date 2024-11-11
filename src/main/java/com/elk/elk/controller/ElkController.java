@@ -1,4 +1,4 @@
-package com.elk.elk.config.controller;
+package com.elk.elk.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
