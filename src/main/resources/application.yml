@@ -2,7 +2,7 @@ spring:
   application:
     name: ELK
   kafka:
-    bootstrap-servers: 172.22.0.2:9092
+    bootstrap-servers: 172.19.0.2:9092
     listener:
       missing-topics-fatal: false      # Do not fail if the topic is missing
 
