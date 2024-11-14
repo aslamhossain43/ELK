@@ -23,6 +23,9 @@ public class ElkController {
     @PostMapping("")
     private void elk(@RequestBody String message) {
         log.info("ELK api is call with message: " + message);
-        kafkaTemplate.send("logs", message);
+        for (int i = 0; i < 10000000; i++) {
+            kafkaTemplate.send("logs", message);
+            log.info("ELK api is call with message: " + message + 1);
+        }
     }
 }
